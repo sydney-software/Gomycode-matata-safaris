@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matata Safaris</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero {
+          background-color:blueviolet;
+          height: 70vh;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-align: center;
+      }
+
+      .card-img-top {
+          height: 200px;
+          object-fit: cover;
+      }
+
+      footer {
+          background-color: navy;
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Travel Agency</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div>
+        <h1>Explore the World</h1>
+        <p>Find your perfect getaway!</p>
+        <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Destinations Section -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Top Destinations</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="safari.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nairobi</h5>
+              <p class="card-text">The city under the sun.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="bali.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bali</h5>
+              <p class="card-text">A tropical paradise.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="santorini.jpg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Santorini</h5>
+              <p class="card-text">
+                A bustling metropolis blending tradition and modernity.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tours Section -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Our Tours</h2>
+      <div class="accordion" id="toursAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Tour Package 1
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#toursAccordion"
+          >
+            <div class="card-body">
+              Explore on fullboard meals and professional tourgides.
+              <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Tour Package 2
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#toursAccordion"
+          >
+            <div class="card-body">
+              Join us for an unforgettable experience on halfboard meals.
+              <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination of Interest</label>
+          <input
+            type="text"
+            class="form-control"
+            id="destination"
+            placeholder="Destination Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <p>&copy; 2023 Matata Safaris. All rights reserved.</p>
+      <a href="#" class="text-white">Facebook</a> |
+      <a href="#" class="text-white">Twitter</a> |
+      <a href="#" class="text-white">Instagram</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
